@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Argentina Programa 4.0</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+    <header>
+        <div id="menu" class="contenedor">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="material-symbols-outlined">
+                        arrow_back
+                        </span>
+                    </a>
+                </li>
+                <li><span class="material-symbols-outlined">
+                    download
+                    </span>
+                </li>
+            </ul>
+
+            <nav>
+                <ul>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#habilidades">HABILIDADES</a></li>
+                    <li><a href="#experiencia">EXPERIENCIA</a></li>
+                    <li><a href="#educacion">EDUCACIÓN</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <div class="grid">
+            
+            <div class="columna-1">
+                <h1>Llene los campos para su curriculum</h1>
+                <div id="datos-personales">
+                    <h2>Datos personales</h2>
+                    <div id="presentacion">
+                        <div id="datos">
+                            <div class="grid">
+                                <div class="label-input">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" placeholder="Nombre completo" id="nombre-ingresado" required>
+                                </div> 
+                                <div class="label-input">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" placeholder="Apellido completo" id="apellido-ingresado" required>
+                                </div>
+                                <div class="label-input">
+                                    <label for="profesion">Profesión</label>
+                                    <input type="text" name="" id="profesion-ingresado">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contacto">
+                        <H2>Contacto</H2>
+                        <div class="grid">
+                            <div class="label-input">
+                                <label for="email-ingresado">Email</label>
+                                <input type="email" placeholder="Mail de contacto" id="email-ingresado">
+                            </div>
+                            <div class="label-input">
+                                <label for="telefono-ingresado">Telefono</label>
+                                <input type="tel" placeholder="Telefono o celular" id="telefono-ingresado">
+                            </div>
+                            <div class="label-input">
+                                <label for="localidad-ingresado">Localidad</label>
+                                <input type="text" placeholder="Localidad donde vive" id="localidad-ingresado">
+                            </div>
+                            <div class="label-input">
+                                <label for="web-ingresado">Web</label>
+                                <input type="url" placeholder="Página web" id="web-ingresado">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="habilidades">
+                        <h2>Habilidades</h2>
+                        <div>
+                            <ul class="lista-linea grid">
+                                <li>
+                                    <input type="text" id="habilidades-ingresado-1">
+                                </li>
+                                <li>
+                                    <input type="text" id="habilidades-ingresado-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="acerca_de_mi-ingresado">
+                        <h2>Acerca de mí</h2>
+                        <div class="grid-1-column">
+                            <textarea name="" id="acerca_de_mi-ingresado" cols="50" rows="10">Objetivos, aptitudes, etc.</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div id="experiencia">
+                    <h2>Experiencia laboral</h2>
+                    <div class="grid">
+                        <ul>
+                            <li class="trabajo-1">                
+                                <div class="label-input">
+                                    <label for="puesto">Puesto</label>
+                                    <input type="text" id="puesto-ingresado">
+                                </div>
+                                <div class="fecha-trabajo">
+                                    <div class="label-input">
+                                        <label for="ingresa-fecha-inicio-trabajo">Fecha de inicio</label>
+                                        <input type="number" id="ingresa-fecha-inicio-trabajo" placeholder="Año de inicio">
+                                    </div>
+                                    <div class="label-input">
+                                        <label for="ingresa-fecha-finalizacion-trabajo">Fecha de finalización</label>
+                                        <input type="number" id="ingresa-fecha-finalizacion-trabajo" placeholder="Año de finalización">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+
+                <div id="educacion">
+                    <h2>Educación</h2>
+                    <div class="grid">
+                        <ul>
+                            <li class="educacion-1">
+                                <div class="label-input">
+                                    <label for="formacion">Formación</label>
+                                    <input type="text" placeholder="" id="formacion-ingresado">
+                                </div>
+                                <div class="label-input">
+                                    <label for="institucion">Institución</label>
+                                    <input type="text" placeholder="" id="institucion-ingresado">
+                                </div>
+                                <div class="fecha-formacion">
+                                    <div class="label-input">
+                                        <label for="ingresa-fecha-inicio-formacion">Fecha de inicio</label>
+                                        <input type="number" id="ingresa-fecha-inicio-formacion" placeholder="Año de inicio">
+                                    </div>
+                                    <div class="label-input">
+                                        <label for="ingresa-fecha-finalizacion-formacion">Fecha de finalización</label>
+                                        <input type="number" id="ingresa-fecha-finalizacion-formacion" placeholder="Año de finalización">
+                                    </div>
+                                </div>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columna-2">
+                <div id="curriculum" class="grid-curriculum">
+                    <div id="curriculum-presentacion">
+                        <h2 id="nombre"></h2>
+                        <h2 id="apellido"></h2>
+                        <h3 id="profesion"></h3>
+                    </div>
+        
+                    <div id="curriculum-columna-1">
+                        <div id="contacto">
+                            <h4>CONTACTO</h4>
+                            <ul>
+                                <li class="contacto-items">
+                                    <div class="flex">
+                                        <span class="material-symbols-outlined">
+                                            location_on
+                                        </span>
+                                        <p id="localidad"></p>
+                                    </div>
+                                </li>
+                                <li class="contacto-items">
+                                    <div class="flex">
+                                        <span class="material-symbols-outlined">
+                                            call
+                                        </span>
+                                        <p id="telefono"></p>
+                                    </div>
+                                </li>
+                                <li class="contacto-items">
+                                    <div class="flex">
+                                        <span class="material-symbols-outlined">
+                                            mail
+                                        </span>
+                                        <p id="email"></p>
+                                    </div>
+                                </li>
+                                <li class="contacto-items">
+                                    <div class="flex">
+                                        <span class="material-symbols-outlined">
+                                            language
+                                        </span>
+                                        <p id="web"></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="hablidades">
+                            <h4>HABILIDADES</h4>
+                            <ul>
+                                <li class="habilidades-items">
+                                    <p id="habilidades-1"></p>
+                                </li>
+                                <li class="habilidades-items">
+                                    <p id="habilidades-2"></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="educacion">
+                            <h4>EDUCACIÓN</h4>
+                            <ul>
+                                <li class="educacion-items">
+                                    <b><p id="formacion"></p></b><br>
+                                    <p id="institucion"></p><br>
+                                    <p id="fecha-inicio-formacion" class="nobloque"></p><p class="nobloque">-</p><p class="nobloque" id="fecha-finalizacion-formacion"></p>
+                                </li>
+                            </ul>
+                        </div>                
+                    </div>
+        
+                    <div id="curriculum-columna-2">
+                        <div>
+                            <h4>ACERCA DE MÍ</h4>
+                            <p id="acerca_de_mi"></p>
+                        </div>
+                        <div>
+                            <h4>EXPERIENCIA LABORAL</h4>
+                            <ul>
+                                <li>
+                                <b><p id="puesto"></p></b><br>
+                                <p id="fecha-inicio-trabajo" class="nobloque"></p><p class="nobloque">-</p><p class="nobloque" id="fecha-finalizacion-trabajo"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </div>
+
+
+         <!-- 
+        <div id="boton" class="grid-1-column">
+            <a href="curriculum.html">
+                <button>
+                    Curriculum
+                </button>
+            </a>
+        </div>
+        -->
+                         
+    </main>
+
+    <script src="jv/funcion.js"></script>
+</body>
+
+</html>

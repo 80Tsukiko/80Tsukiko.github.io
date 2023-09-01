@@ -99,10 +99,14 @@ input {
 
 .columna-1, .columna-2 {
     padding: 1rem;
+    
+    
 }
 
 .columna-1 {
     background-color: white;
+    overflow-y: auto;
+
 }
 
 .columna-2 {
@@ -233,4 +237,8 @@ li {
 
 #curriculum .nobloque {
     display: inline;
+}
+
+#curriculum p {
+    margin: 0;
 }

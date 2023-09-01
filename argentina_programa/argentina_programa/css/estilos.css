@@ -1,0 +1,244 @@
+*{
+    Box-sizing: box-border;
+    max-width: 100%; height: auto; /*(p q no se deforme la imagen)*/
+    }
+
+h1, h2, h3, h4, h5, p, label, button, li {
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    margin: 0%;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: hsl(271, 68%, 65%);
+    color: white;
+    font-weight: 700;
+}
+
+.contenedor {
+    width: min(75rem, 100%);
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+header #menu {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header ul li .material-symbols-outlined {
+    color: white;
+    font-size: 35px;
+}
+
+header ul li {
+    margin: 0;
+    color: white;
+    padding: 1rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(271, 68%, 65%);
+    text-transform: uppercase;
+    margin-block: 4rem;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(271, 68%, 65%);
+    margin-block-end: .5rem;
+    margin-block-start: 2rem;
+}
+
+input {
+    width: 15rem;
+    height: 1.5rem;
+    padding: .5rem;
+    margin-block-start: .25rem;
+}
+
+.nombre-apellido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-block-end: 1rem;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    margin-inline-end: 1rem;
+    margin-block: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    justify-items: center;
+}
+
+.columna-1, .columna-2 {
+    padding: 1rem;
+    
+    
+}
+
+.columna-1 {
+    background-color: white;
+    overflow-y: auto;
+
+}
+
+.columna-2 {
+    background-color: hsl(271, 62%, 90%);
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    color: hsl(271, 68%, 65%);
+}
+
+ul label {
+    color: black;
+}
+
+li {
+    margin-block-end: 1rem;
+}
+
+.lista-linea li input {
+    border-width: 0 0 .5px 0;
+    border-color: hsl(271, 72%, 30%);
+}
+
+.grid-1-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#boton {
+    margin-block-start: 3rem;
+    margin-block-end: 1.5rem;
+}
+
+#boton button {
+    height: 2rem;
+    padding-inline: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: hsl(271, 68%, 65%);
+    border-color: hsl(271, 72%, 30%);
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    border-radius: .25rem;
+    border-width: 1px;
+}
+
+/* ----------------------curriculum especificaciones------------------- */
+
+.grid-curriculum {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "contacto experiencia";
+}
+
+#curriculum-presentacion {
+    grid-area: header;
+    background-color: rgb(225, 237, 255);
+    height: 10rem;
+    padding: 1rem;
+}
+
+#curriculum-columna-1 {
+    grid-area: contacto;
+    background-color: rgb(242, 247, 255);
+    padding: 1rem;
+}
+
+#curriculum-columna-2 {
+    grid-area: experiencia;
+    padding: 1rem;
+}
+
+
+#curriculum {
+    background-color: white;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+#curriculum-presentacion h1 {
+    margin: 0;
+}
+
+#curriculum h2, #curriculum h3, #curriculum h4, #curriculum h5 {
+    margin: 0;
+}
+
+#curriculum h2 {
+    color: rgb(34, 68, 109);
+    font-size: 2rem;
+}
+
+#curriculum h3 {
+    color: rgb(34, 68, 109);
+}
+
+#curriculum h4 {
+    color: rgb(48, 48, 48);
+    margin-block-start: 3rem;
+    margin-block-end: .5rem;
+}
+
+#curriculum .material-symbols-outlined {
+    color: rgb(48, 48, 48);
+    margin-inline-end: .5rem;
+}
+
+#curriculum #contacto ul {
+    list-style: none;
+    margin-inline-start: 0;
+}
+
+#curriculum ul {
+    color: rgb(48, 48, 48);
+    margin-inline-start: 1rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#curriculum .nobloque {
+    display: inline;
+}
+
+#curriculum p {
+    margin: 0;
+}
